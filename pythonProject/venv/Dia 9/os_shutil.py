@@ -20,6 +20,7 @@ import send2trash
 # Elimina carpeta con todo su contenido DE FORMA IRREVERSIBLE.
 # PELIGROSO!!!
 
+
 # send2trash.send2trash('curso.txt')
 # # Elimina y manda a la papelera de reciclaje.
 
@@ -29,7 +30,7 @@ print(next(os.walk(ruta)))
 
 for carpeta,subcarpeta,archivo in os.walk(ruta):
     print(f'En la carpeta: {carpeta}')
-    print(f'las subcarpetas son:')
+    print(f'Las subcarpetas son:')
     for sub in subcarpeta:
         print(f'\t{sub}')
     print(f'Los archivo son:')
