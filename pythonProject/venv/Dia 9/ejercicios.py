@@ -39,3 +39,14 @@ def verificar_cp(cp):
 verificar_cp('2ewsa')
 
 
+def verificar_cp(cp):
+    patron = r'[0-9][a-zA-Z]{3}-[0-9]{4}'
+    busqueda = re.search(patron, cp)
+    if busqueda != None:
+        print("Ok")
+    else:
+        print("Incorrecto")
+
+texto = str(input('Introduce un patron: '))
+verificar_cp(texto)
+
