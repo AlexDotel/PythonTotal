@@ -22,8 +22,11 @@ def listar_archivos_directorio(directorio):
             ruta_completa = os.path.join(directorio_raiz, archivo)
             archivos.append(ruta_completa)
     return archivos
+# PC
+carpeta_principal = 'C:\\Users\\joalr\\PycharmProjects\\PythonTotal\\pythonProject\\venv\\Dia 9\\ProyectoDia9\\Mi_Gran_Directorio'
 
-carpeta_principal = 'C:\\Users\\joalr\\PycharmProjects\\pythonProject\\venv\\Dia 9\\ProyectoDia9\\Mi_Gran_Directorio'
+# Laptop
+# carpeta_principal = 'C:\\Users\\joalr\\PycharmProjects\\pythonProject\\venv\\Dia 9\\ProyectoDia9\\Mi_Gran_Directorio'
 lista_archivos_serie = []
 archivos_en_directorio = listar_archivos_directorio(carpeta_principal)
 
